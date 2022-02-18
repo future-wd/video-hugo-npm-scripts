@@ -1,0 +1,24 @@
+{
+  "name": "video-hugo-npm-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server --disableFastRender --gc",
+    "dev:preview": "hugo server --disableFastRender --gc --buildDrafts --buildFuture",
+    "build": "hugo --gc --minify --cleanDestinationDir",
+    "build:preview": "hugo --gc --minify --cleanDestinationDir --buildDrafts --buildFuture",
+    "renderToDisk:dev": "hugo server --disableFastRender --gc --renderToDisk --cleanDestinationDir",
+    "renderToDisk:prod": "hugo server --disableFastRender --gc --renderToDisk --minify --cleanDestinationDir --environment production"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future-wd/video-hugo-npm-scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future-wd/video-hugo-npm-scripts/issues"
+  },
+  "homepage": "https://github.com/future-wd/video-hugo-npm-scripts#readme"
+}
