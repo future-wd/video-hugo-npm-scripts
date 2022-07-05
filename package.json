@@ -1,15 +1,15 @@
 {
   "name": "video-hugo-npm-scripts",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Watch the video at <https://youtu.be/d7L8ydAdu7U>",
   "scripts": {
     "dev": "hugo server --disableFastRender --gc",
-    "dev:preview": "hugo server --disableFastRender --gc --buildDrafts --buildFuture",
-    "build": "hugo --gc --minify --cleanDestinationDir",
-    "build:preview": "hugo --gc --minify --cleanDestinationDir --buildDrafts --buildFuture",
-    "renderToDisk:dev": "hugo server --disableFastRender --gc --renderToDisk --cleanDestinationDir",
-    "renderToDisk:prod": "hugo server --disableFastRender --gc --renderToDisk --minify --cleanDestinationDir --environment production"    
+    "dev:preview": "npm run dev -- --buildDrafts --buildFuture",
+    "build": "hugo --verbose --minify --cleanDestinationDir --gc",
+    "renderToDisk": "hugo server --disableFastRender --gc --renderToDisk --cleanDestinationDir",
+    "renderToDisk:preview": "npm run renderToDisk -- --buildDrafts --buildFuture",
+    "rednerToDisk:production" : "npm run renderToDisk -- --minify --environment production",
+    "hugo version": "hugo version"    
   },
   "repository": {
     "type": "git",
